@@ -12,22 +12,26 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(55deg,black, rgba(0, 0, 0, 0.407))
+    background:linear-gradient(55deg,white ,rgba(0, 0, 0, 0.411))
 }
 
+.screen{
+    border:2px solid white;
+    border-radius: 20px;
+}
 .calculator{
     border: 3px solid rgba(0, 0, 0, 0.763);
     padding:20px;
     border-radius:16px;
     display:grid;
   
-    background:transparent;
+    background:rgba(0, 0, 0, 0.753);
     box-shadow: 0px 3px 30px rgba(231, 223, 223, 0.425);
 }
 
 input{
     width: 330px;
-    border:none;
+    border:white;
     padding:24px;
     margin:10px;
     background:transparent;
@@ -61,6 +65,10 @@ button{
     
     box-shadow: -8px -8px 20px rgba(255, 255, 255, 0.304);
     cursor:pointer;
+}
+
+button:active{
+    box-shadow:-8px -8px 10px rgba(255, 255, 255, 0.304)inset ;
 }
 
 .operator{
